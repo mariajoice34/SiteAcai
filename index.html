@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaí Top</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOPO -->
+    <header id="topo">
+        <h1 class="titulo">🍇 Açaí Top</h1>
+
+        <div class="acoes">
+            <button>🛒</button>
+            <button>📋</button>
+        </div>
+    </header>
+
+    <!-- CORPO PRINCIPAL -->
+    <section class="corpo">
+        <div class="texto">
+            <h2>Açaí Fresquinho</h2>
+            <p>Os melhores açaís da cidade, feitos com amor e ingredientes selecionados.</p>
+            <button class="vercardapio">Ver Cardápio</button>
+        </div>
+
+        <img src="img/açai.jpeg" alt="Foto de tigela de Açaí">
+    </section>
+
+    <!-- BOTÕES DE CATEGORIA -->
+    <section class="buts">
+        <button class="but1" id="btn-acai">Açaí</button>
+        <button class="but2">Bebidas</button>
+        <button class="but3">Salgados</button>
+    </section>
+
+    <!-- CARDÁPIO DE AÇAÍ -->
+    <section id="cardapio-acai" class="cardapio">
+
+        <!--Imagem no Topo-->
+        <div class="cardapio-img">
+             <img src="img/açaiC.png" alt="Açaí Tradicional">
+        </div>
+
+        <h2>🍇Açaí Tradiconal</h2>
+
+        <div class="item">
+            <div class="info">
+                <h3>Ingredientes:</h3>
+                <p>Açai Tradicional , Granola, Amendoim, Banana e Leite Condensado.</p>
+                
+                <div class="tamanhos">
+                    <label class="opcao-tamanho">
+                        <input type="radio" name="tamanho-acai" value="350ml - R$ 10,00" checked>
+                        <h3>350ml - R$ 10,00</h3>
+                    </label>
+
+                    <label class="opcao-tamanho">
+                        <input type="radio" name="tamanho-acai" value="500ml - R$ 15,00">
+                        <h3>500ml - R$ 15,00</h3>
+                    </label>
+
+                    <button onclick="adicionarCarrinho()">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
